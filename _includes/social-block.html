@@ -1,4 +1,14 @@
               <ul class="social-links">
+                {% if site.author.linkedin %}
+                <li>
+                  <a data-toggle="tooltip" title="Connettiti per collaborare" href="https://www.linkedin.com/in/{{ site.author.linkedin }}/" title="LinkedIn" class="fa fa-linkedin"></a>
+                </li>
+                {% endif %}  
+                {% if site.author.github %}
+                <li>
+                  <a data-toggle="tooltip" title="Connettiti per collaborare" href="https://www.github.com/{{ site.author.github }}/" title="LinkedIn" class="fa fa-github"></a>
+                </li>
+                {% endif %}                
                 {% if site.author.facebook %}
                 <li>
                   <a data-toggle="tooltip" title="Seguici e scopri il gruppo segreto!" href="https://www.facebook.com/{{ site.author.facebook }}/" title="Facebook" class="fa fa-facebook"></a>
@@ -12,11 +22,6 @@
                 {% if site.author.instagram %} 
                 <li>
                   <a data-toggle="tooltip" title="NoAlFemminicidio su Instagram" href="https://instagram.com/{{ site.author.instagram }}" title="Twitter" class="fa fa-instagram"></a>
-                </li>
-                {% endif %}
-                {% if site.author.linkedin %}
-                <li>
-                  <a data-toggle="tooltip" title="Connettiti per collaborare" href="https://www.linkedin.com/in/{{ site.author.linkedin }}/" title="LinkedIn" class="fa fa-linkedin"></a>
                 </li>
                 {% endif %}
               </ul>
